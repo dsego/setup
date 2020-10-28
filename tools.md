@@ -9,3 +9,5 @@ kakoune - http://kakoune.org/
 antibody - https://getantibody.github.io/
 
 starship - https://starship.rs/
+
+fzf - https://github.com/junegunn/fzf
