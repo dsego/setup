@@ -11,3 +11,5 @@ antibody - https://getantibody.github.io/
 starship - https://starship.rs/
 
 fzf - https://github.com/junegunn/fzf
+
+tig - https://jonas.github.io/tig/
