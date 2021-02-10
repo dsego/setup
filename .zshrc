@@ -7,6 +7,8 @@ antigen bundle zsh-users/zsh-completions
 antigen bundle zsh-users/zsh-autosuggestions
 antigen bundle zsh-users/zsh-syntax-highlighting
 antigen bundle romkatv/powerlevel10k
+antigen theme romkatv/powerlevel10k
+antigen apply
 
 
 # History
@@ -68,7 +70,7 @@ export FZF_DEFAULT_OPTS='--height 40% --reverse --border'
 
 
 # Starship -  The cross-shell prompt for astronauts
-eval "$(starship init zsh)"
+#eval "$(starship init zsh)"
 
 fpath=(~/.zsh $fpath) # Keep custom completion files here
 
