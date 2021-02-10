@@ -1,11 +1,12 @@
 export TERM="xterm-256color"
 
 
-source <(antibody init)
-
-
-# Packages
-antibody bundle < ~/.zsh_bundles
+# Plugins
+source ~/antigen.zsh
+antigen bundle zsh-users/zsh-completions
+antigen bundle zsh-users/zsh-autosuggestions
+antigen bundle zsh-users/zsh-syntax-highlighting
+antigen bundle romkatv/powerlevel10k
 
 
 # History
