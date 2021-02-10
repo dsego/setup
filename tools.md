@@ -6,7 +6,9 @@ ripgrep - https://github.com/BurntSushi/ripgrep
 
 kakoune - http://kakoune.org/
 
-antibody - https://getantibody.github.io/
+~antibody~ deprecated - https://getantibody.github.io/
+
+antigen - https://github.com/zsh-users/antigen
 
 starship - https://starship.rs/
 
