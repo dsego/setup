@@ -1,14 +1,13 @@
 export TERM="xterm-256color"
 
+# Zplug - plugin manager
+source ~/.zplug/init.zsh
 
-# Plugins
-source ~/antigen.zsh
-antigen bundle zsh-users/zsh-completions
-antigen bundle zsh-users/zsh-autosuggestions
-antigen bundle zsh-users/zsh-syntax-highlighting
-antigen bundle romkatv/powerlevel10k
-antigen theme romkatv/powerlevel10k
-antigen apply
+zplug "zsh-users/zsh-syntax-highlighting"
+zplug "zuxfoucault/colored-man-pages_mod"
+zplug "supercrabtree/k"
+zplug "zsh-users/zsh-autosuggestions"
+zplug "zsh-users/zsh-completions"
 
 
 # History
@@ -47,6 +46,7 @@ alias ...='../..'
 alias ....='../../..'
 
 
+
 # Deno
 export DENO_INSTALL="$HOME/.deno"
 export PATH="$DENO_INSTALL/bin:$PATH"
@@ -70,7 +70,7 @@ export FZF_DEFAULT_OPTS='--height 40% --reverse --border'
 
 
 # Starship -  The cross-shell prompt for astronauts
-#eval "$(starship init zsh)"
+eval "$(starship init zsh)"
 
 fpath=(~/.zsh $fpath) # Keep custom completion files here
 
@@ -83,4 +83,3 @@ zstyle :compinstall filename '/home/davorin/.zshrc'
 autoload -Uz compinit
 compinit
 # End of lines added by compinstall
-
