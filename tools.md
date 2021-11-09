@@ -8,7 +8,9 @@ kakoune - http://kakoune.org/
 
 zplug- https://github.com/zplug/zplug
 
-starship - https://starship.rs/
+~~starship - https://starship.rs/~~
+
+ohmyposh - https://ohmyposh.dev/
 
 fzf - https://github.com/junegunn/fzf
 
