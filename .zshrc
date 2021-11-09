@@ -70,7 +70,7 @@ export FZF_DEFAULT_OPTS='--height 40% --reverse --border'
 
 
 # Starship -  The cross-shell prompt for astronauts
-eval "$(starship init zsh)"
+# eval "$(starship init zsh)"
 
 fpath=(~/.zsh $fpath) # Keep custom completion files here
 
@@ -83,3 +83,7 @@ zstyle :compinstall filename '/home/davorin/.zshrc'
 autoload -Uz compinit
 compinit
 # End of lines added by compinstall
+
+# Oh My Posh - A prompt theme engine for any shell.
+eval "$(oh-my-posh --init --shell zsh --config ~/.poshthemes/amro.omp.json)"
+
