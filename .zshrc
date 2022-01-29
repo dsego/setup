@@ -85,5 +85,7 @@ compinit
 # End of lines added by compinstall
 
 # Oh My Posh - A prompt theme engine for any shell.
-eval "$(oh-my-posh --init --shell zsh --config ~/.poshthemes/amro.omp.json)"
+# eval "$(oh-my-posh --init --shell zsh --config ~/.poshthemes/powerline.omp.json)"
+# eval "$(oh-my-posh --init --shell zsh --config ~/.poshthemes/amro.omp.json)"
+eval "$(oh-my-posh --init --shell zsh --config ~/.poshthemes/stelbent.minimal.omp.json)"
 
