@@ -7,10 +7,11 @@
 	co = checkout
 	br = branch
 	ci = commit
-    cp = cherry-pick
+	cp = cherry-pick
 	st = status
-    ll = log --pretty=format:'%C(magenta)%h%Creset -%C(bold yellow)%d%Creset %s %Cgreen(%cr) %C(bold cyan)<%an>%Creset'
-    lg = log --graph --pretty=format:'%C(magenta)%h%Creset -%C(bold yellow)%d%Creset %s %Cgreen(%cr) %C(bold cyan)<%an>%Creset'
+	up = push -u origin HEAD
+	ll = log --pretty=format:'%C(magenta)%h%Creset -%C(bold yellow)%d%Creset %s %Cgreen(%cr) %C(bold cyan)<%an>%Creset'
+	lg = log --graph --pretty=format:'%C(magenta)%h%Creset -%C(bold yellow)%d%Creset %s %Cgreen(%cr) %C(bold cyan)<%an>%Creset'
 [filter "lfs"]
 	clean = git-lfs clean -- %f
 	smudge = git-lfs smudge -- %f
