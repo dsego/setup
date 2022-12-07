@@ -1,7 +1,9 @@
 export TERM="xterm-256color"
 
 # Zplug - plugin manager
-source ~/.zplug/init.zsh
+# source ~/.zplug/init.zsh
+export ZPLUG_HOME=$(brew --prefix)/opt/zplug
+source $ZPLUG_HOME/init.zsh
 
 zplug "zsh-users/zsh-syntax-highlighting"
 zplug "zuxfoucault/colored-man-pages_mod"
@@ -60,18 +62,6 @@ export PATH="$HOME/.npm/bin:$PATH"
 export FZF_DEFAULT_OPTS='--height 40% --reverse --border'
 
 
-# AGKOZAK_PROMPT_CHAR=( ➜ )
-# AGKOZAK_CUSTOM_SYMBOLS=( '⇣⇡' '⇣' '⇡' '+' 'x' '!' '>' '?' )
-# AGKOZAK_COLORS_PROMPT_CHAR='magenta'
-# AGKOZAK_LEFT_PROMPT_ONLY=1
-
-# To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
-# [[ -f ~/.p10k.zsh ]] && source ~/.p10k.zsh
-
-
-# Starship -  The cross-shell prompt for astronauts
-# eval "$(starship init zsh)"
-
 fpath=(~/.zsh $fpath) # Keep custom completion files here
 
 # The following lines were added by compinstall
@@ -84,8 +74,11 @@ autoload -Uz compinit
 compinit
 # End of lines added by compinstall
 
-# Oh My Posh - A prompt theme engine for any shell.
-# eval "$(oh-my-posh --init --shell zsh --config ~/.poshthemes/powerline.omp.json)"
-# eval "$(oh-my-posh --init --shell zsh --config ~/.poshthemes/amro.omp.json)"
-eval "$(oh-my-posh --init --shell zsh --config ~/.poshthemes/stelbent.minimal.omp.json)"
+# Oh My Posh theme
+eval "$(oh-my-posh init zsh --config $(brew --prefix oh-my-posh)/themes/amro.omp.json)"
+# eval "$(oh-my-posh init zsh --config $(brew --prefix oh-my-posh)/themes/stelbent.minimal.omp.json)"
 
+
+export NVM_DIR="$HOME/.nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
+[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
