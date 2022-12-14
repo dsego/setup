@@ -47,7 +47,8 @@ alias mv='mv -i'
 alias ...='../..'
 alias ....='../../..'
 
-
+# Laravel Sail
+alias sail='[ -f sail ] && sh sail || sh vendor/bin/sail'
 
 # Deno
 export DENO_INSTALL="$HOME/.deno"
