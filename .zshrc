@@ -47,6 +47,9 @@ alias mv='mv -i'
 alias ...='../..'
 alias ....='../../..'
 
+# Python
+alias python='/opt/homebrew/bin/python3'
+
 # Laravel Sail
 alias sail='[ -f sail ] && sh sail || sh vendor/bin/sail'
 
