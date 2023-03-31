@@ -79,10 +79,23 @@ compinit
 # End of lines added by compinstall
 
 # Oh My Posh theme
-eval "$(oh-my-posh init zsh --config $(brew --prefix oh-my-posh)/themes/amro.omp.json)"
-# eval "$(oh-my-posh init zsh --config $(brew --prefix oh-my-posh)/themes/stelbent.minimal.omp.json)"
+# eval "$(oh-my-posh init zsh --config $(brew --prefix oh-my-posh)/themes/amro.omp.json)"
+eval "$(oh-my-posh init zsh --config $(brew --prefix oh-my-posh)/themes/stelbent.minimal.omp.json)"
 
+export REACT_APP_ENV="local"
 
 export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
 [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
+
+
+# The next line updates PATH for the Google Cloud SDK.
+if [ -f '/Users/davorin/google-cloud-sdk/path.zsh.inc' ]; then . '/Users/davorin/google-cloud-sdk/path.zsh.inc'; fi
+
+# The next line enables shell command completion for gcloud.
+if [ -f '/Users/davorin/google-cloud-sdk/completion.zsh.inc' ]; then . '/Users/davorin/google-cloud-sdk/completion.zsh.inc'; fi
+
+source /Users/davorin/.docker/init-zsh.sh || true # Added by Docker Desktop
+
+# LLVM
+export PATH="/usr/local/opt/llvm/bin:$PATH"
