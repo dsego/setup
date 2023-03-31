@@ -98,4 +98,5 @@ if [ -f '/Users/davorin/google-cloud-sdk/completion.zsh.inc' ]; then . '/Users/d
 source /Users/davorin/.docker/init-zsh.sh || true # Added by Docker Desktop
 
 # LLVM
-export PATH="/usr/local/opt/llvm/bin:$PATH"
+export PATH="/opt/homebrew/opt/llvm@11/bin:$PATH"
+
