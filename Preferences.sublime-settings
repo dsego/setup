@@ -1,5 +1,7 @@
 {
-	"ignored_packages":
+	"theme": "Adaptive.sublime-theme",
+	"color_scheme": "Mocha.sublime-color-scheme",
+		"ignored_packages":
 	[
 		"Anaconda",
 		"Vintage",
@@ -8,7 +10,7 @@
 	"copy_with_empty_selection": false,
 	"ensure_newline_at_eof_on_save": true,
 	"find_selected_text": true,
-	"font_face": "Jetbrains Mono",
+	"font_face": "Jetbrains Mono NL",
 	"highlight_modified_tabs": true,
 	"indent_guide_options":
 	[
@@ -25,11 +27,9 @@
 	"show_encoding": true,
 	"show_line_endings": true,
 	"spell_check": true,
-	"theme": "Adaptive.sublime-theme",
 	"translate_tabs_to_spaces": true,
 	"trim_trailing_white_space_on_save": true,
 	"word_wrap": false,
-	"color_scheme": "Monokai Pro.sublime-color-scheme",
 	"added_words":
 	[
 		"sinusoid",
@@ -39,6 +39,7 @@
 	[
 		"middleware"
 	],
-	"revert_font_size": 10,
-	"font_size": 10,
+	"revert_font_size": 12,
+	"font_size": 12,
+	"inactive_sheet_dimming": false
 }
