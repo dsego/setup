@@ -97,6 +97,12 @@ if [ -f '/Users/davorin/google-cloud-sdk/completion.zsh.inc' ]; then . '/Users/d
 
 source /Users/davorin/.docker/init-zsh.sh || true # Added by Docker Desktop
 
-# LLVM
+
+
+# LLVM & Odin
 export PATH="/opt/homebrew/opt/llvm@11/bin:$PATH"
+export PATH="/Users/davorin/Code/projects/Odin:$PATH"
+
+export LIBRARY_PATH="/opt/homebrew/Cellar/libpng/1.6.39/lib:$LIBRARY_PATH"
+export CPATH="/opt/homebrew/Cellar/libpng/1.6.39/include:$CPATH"
 
