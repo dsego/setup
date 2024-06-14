@@ -61,10 +61,8 @@ export PATH="$DENO_INSTALL/bin:$PATH"
 export PATH="$HOME/.npm/bin:$PATH"
 
 
-# FZF - command line fuzzy finder
-[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh ]
-export FZF_DEFAULT_OPTS='--height 40% --reverse --border'
-
+# Set up fzf key bindings and fuzzy completion
+source <(fzf --zsh)
 
 fpath=(~/.zsh $fpath) # Keep custom completion files here
 
