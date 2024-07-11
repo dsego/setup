@@ -41,4 +41,5 @@
 	"font_size": 12,
 	"inactive_sheet_dimming": false,
 	"index_files": true,
+        "shift_tab_unindent": true,
 }
