@@ -1,0 +1,8 @@
+cursor-style = block
+cursor-style-blink = false
+shell-integration-features = no-cursor
+macos-titlebar-style = tabs
+theme = Solarized Dark Higher Contrast
+shell-integration = zsh
+font-thicken = true
+font-family = Monaco
