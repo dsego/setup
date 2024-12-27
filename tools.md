@@ -17,3 +17,5 @@ Nerd Fonts - https://www.nerdfonts.com
 fzf - https://github.com/junegunn/fzf
 
 tig - https://jonas.github.io/tig/
+
+ghostty - https://ghostty.org/
