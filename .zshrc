@@ -64,6 +64,7 @@ export PATH="$HOME/.npm/bin:$PATH"
 # Set up fzf key bindings and fuzzy completion
 source <(fzf --zsh)
 
+
 fpath=(~/.zsh $fpath) # Keep custom completion files here
 
 # The following lines were added by compinstall
@@ -77,8 +78,7 @@ compinit
 # End of lines added by compinstall
 
 # Oh My Posh theme
-# eval "$(oh-my-posh init zsh --config $(brew --prefix oh-my-posh)/themes/amro.omp.json)"
-eval "$(oh-my-posh init zsh --config $(brew --prefix oh-my-posh)/themes/stelbent.minimal.omp.json)"
+eval "$(oh-my-posh init zsh --config $(brew --prefix oh-my-posh)/themes/star.omp.json)"
 
 export REACT_APP_ENV="local"
 
@@ -93,14 +93,24 @@ if [ -f '/Users/davorin/google-cloud-sdk/path.zsh.inc' ]; then . '/Users/davorin
 # The next line enables shell command completion for gcloud.
 if [ -f '/Users/davorin/google-cloud-sdk/completion.zsh.inc' ]; then . '/Users/davorin/google-cloud-sdk/completion.zsh.inc'; fi
 
-source /Users/davorin/.docker/init-zsh.sh || true # Added by Docker Desktop
-
-
 
 # LLVM & Odin
-export PATH="/opt/homebrew/opt/llvm@11/bin:$PATH"
-export PATH="/Users/davorin/Code/projects/Odin:$PATH"
+export PATH="/opt/homebrew/opt/llvm@19/bin:$PATH"
+export PATH="/Users/davorin/Code/Odin:$PATH"
 
-export LIBRARY_PATH="/opt/homebrew/Cellar/libpng/1.6.39/lib:$LIBRARY_PATH"
-export CPATH="/opt/homebrew/Cellar/libpng/1.6.39/include:$CPATH"
+# export LDFLAGS="-L/opt/homebrew/opt/llvm/lib -L/opt/homebrew/lib"
+# export CPPFLAGS="-I/opt/homebrew/opt/llvm/include"
 
+# bun completions
+[ -s "/Users/davorin/.bun/_bun" ] && source "/Users/davorin/.bun/_bun"
+
+# bun
+export BUN_INSTALL="$HOME/.bun"
+export PATH="$BUN_INSTALL/bin:$PATH"
+
+# bun
+export BUN_INSTALL="$HOME/.bun"
+export PATH="$BUN_INSTALL/bin:$PATH"
+
+# kubectl plugin
+export USE_GKE_GCLOUD_AUTH_PLUGIN=True
