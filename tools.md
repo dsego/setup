@@ -19,3 +19,5 @@ fzf - https://github.com/junegunn/fzf
 tig - https://jonas.github.io/tig/
 
 ghostty - https://ghostty.org/
+
+yazi - https://github.com/sxyazi/yazi
