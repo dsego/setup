@@ -6,3 +6,7 @@ theme = Solarized Dark Higher Contrast
 shell-integration = zsh
 font-thicken = true
 font-family = Monaco
+window-colorspace = display-p3
+background-opacity = 0.9
+background-blur-radius = 10
+#custom-shader=/Users/davorin/Code/ghostty-shaders/glow-rgbsplit-twitchy.glsl
