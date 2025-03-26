@@ -93,13 +93,6 @@ if [ -f '/Users/davorin/google-cloud-sdk/path.zsh.inc' ]; then . '/Users/davorin
 if [ -f '/Users/davorin/google-cloud-sdk/completion.zsh.inc' ]; then . '/Users/davorin/google-cloud-sdk/completion.zsh.inc'; fi
 
 
-# LLVM & Odin
-export PATH="/opt/homebrew/opt/llvm@19/bin:$PATH"
-export PATH="/Users/davorin/Code/Odin:$PATH"
-
-# export LDFLAGS="-L/opt/homebrew/opt/llvm/lib -L/opt/homebrew/lib"
-# export CPPFLAGS="-I/opt/homebrew/opt/llvm/include"
-
 # bun completions
 [ -s "/Users/davorin/.bun/_bun" ] && source "/Users/davorin/.bun/_bun"
 
