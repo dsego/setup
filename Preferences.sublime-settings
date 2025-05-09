@@ -1,6 +1,6 @@
 {
 	"theme": "Adaptive.sublime-theme",
-	"color_scheme": "Packages/Aura Color Scheme/aura-theme.tmTheme",
+	"color_scheme": "auto",
 		"ignored_packages":
 	[
 		"LSP-biome",
@@ -44,4 +44,6 @@
 	"index_files": true,
 	"shift_tab_unindent": true,
 	"update_check": true,
+	"dark_color_scheme": "Monokai Pro (Filter Octagon).sublime-color-scheme",
+	"light_color_scheme": "Monokai Pro Light (Filter Sun).sublime-color-scheme",
 }
