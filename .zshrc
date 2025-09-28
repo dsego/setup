@@ -8,8 +8,8 @@ source $ZPLUG_HOME/init.zsh
 zplug "zsh-users/zsh-syntax-highlighting"
 zplug "zuxfoucault/colored-man-pages_mod"
 zplug "supercrabtree/k"
-zplug "zsh-users/zsh-autosuggestions"
 zplug "zsh-users/zsh-completions"
+zplug "zsh-users/zsh-autosuggestions"
 
 
 # History
@@ -78,8 +78,11 @@ compinit
 # End of lines added by compinstall
 
 # Oh My Posh theme
-eval "$(oh-my-posh init zsh --config $(brew --prefix oh-my-posh)/themes/tokyonight_storm.omp.json)"
+eval "$(oh-my-posh init zsh --config $(brew --prefix oh-my-posh)/themes/spaceship.omp.json)"
+# eval "$(oh-my-posh init zsh --config $(brew --prefix oh-my-posh)/themes/amro.omp.json)"
+# eval "$(oh-my-posh init zsh --config $(brew --prefix oh-my-posh)/themes/tokyonight_storm.omp.json)"
 # eval "$(oh-my-posh init zsh --config $(brew --prefix oh-my-posh)/themes/star.omp.json)"
+
 
 export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
@@ -106,3 +109,9 @@ export PATH="$BUN_INSTALL/bin:$PATH"
 
 # kubectl plugin
 export USE_GKE_GCLOUD_AUTH_PLUGIN=True
+
+# The following lines have been added by Docker Desktop to enable Docker CLI completions.
+fpath=(/Users/davorin/.docker/completions $fpath)
+autoload -Uz compinit
+compinit
+# End of Docker CLI completions
