@@ -1,5 +1,5 @@
-window-width = 120
-window-height = 44
+window-width = 140
+window-height = 50
 cursor-style = block
 cursor-style-blink = false
 shell-integration-features = no-cursor
