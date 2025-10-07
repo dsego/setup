@@ -1,0 +1,3 @@
+[
+    { "keys": ["super+shift+m"], "command": "gs_line_history"},
+]
