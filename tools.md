@@ -1,5 +1,7 @@
 tldr - https://tldr.sh/
 
+hurl - https://hurl.dev/
+
 trash - https://github.com/andreafrancia/trash-cli
 
 ripgrep - https://github.com/BurntSushi/ripgrep
